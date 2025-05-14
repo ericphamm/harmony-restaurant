@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Harmony | Sushi & Fusion Restaurace Praha</title>
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<!-- Hlavička & Navigace -->
+	<header>
+		<div class="container">
+			<nav>
+				<div class="logo">Harmony</div>
+				<ul class="nav-links">
+					<li><a href="#home">Domů</a></li>
+					<li><a href="#dishes">Menu</a></li>
+					<li><a href="#reservation">Rezervace</a></li>
+					<li><a href="#about">O nás</a></li>
+					<li><a href="#gallery">Galerie</a></li>
+					<li><a href="#contact">Kontakt</a></li>
+				</ul>
+				<div class="hamburger">
+					<div class="line1"></div>
+					<div class="line2"></div>
+					<div class="line3"></div>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Hero Sekce -->
+	<section class="hero" id="home">
+		<div class="container">
+			<div class="hero-content">
+				<h1>Vstupte do světa moderní asijské gastronomie</h1>
+				<p>Kde se setkává Východ se Západem v harmonii chutí</p>
+				<a href="#reservation" class="btn">Rezervovat stůl</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- Signature Dishes -->
+	<section class="dishes" id="dishes">
+		<div class="container">
+			<div class="section-title">
+				<h2>Naše speciality</h2>
+				<p>Kulinářské skvosty, které spojují tradiční asijské techniky s moderními vlivy</p>
+			</div>
+			<div class="dishes-grid">
+				<div class="dish-card">
+					<img src="photos/parkchoi_bowls.jpg"
+						alt="Park Choi Bowls" class="dish-img">
+					<div class="dish-info">
+						<h3>Dragon Roll Deluxe</h3>
+						<p>Krevetová tempura, avokádo a okurka, zabalené v úhoři a avokádu, podávané s teriyaki omáčkou
+							a wasabi majonézou.</p>
+						<div class="dish-price">320 Kč</div>
+					</div>
+				</div>
+				<div class="dish-card">
+					<img src="https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+						alt="Miso Glazovaný Černý Treska" class="dish-img">
+					<div class="dish-info">
+						<h3>Miso Glazovaná Černá Treska</h3>
+						<p>Máslová černá treska marinovaná ve sladkém miso, podávaná s wasabi bramborovou kaší a
+							zázvorem ochucenou zeleninou.</p>
+						<div class="dish-price">390 Kč</div>
+					</div>
+				</div>
+				<div class="dish-card">
+					<img src="https://images.unsplash.com/photo-1617196034183-421b4917c92d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+						alt="Citronová Tráva Jehněčí Kotlety" class="dish-img">
+					<div class="dish-info">
+						<h3>Jehněčí Kotlety s Citronovou Trávou</h3>
+						<p>Křehké jehněčí kotlety marinované v citronové trávě a thajském koření, podávané s kokosovou
+							rýží a tamarindovou omáčkou.</p>
+						<div class="dish-price">420 Kč</div>
+					</div>
+				</div>
+				<div class="dish-card">
+					<img src="https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+						alt="Lanýžový Sushi Roll" class="dish-img">
+					<div class="dish-info">
+						<h3>Lanýžový Sushi Roll</h3>
+						<p>Čerstvý tuňák a avokádo roll, navrchu s opečeným lososem, hoblinkami černého lanýže a
+							kaviárem ochuceným yuzu.</p>
+						<div class="dish-price">350 Kč</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Rezervační Formulář -->
+	<section class="reservation" id="reservation">
+		<div class="container">
+			<div class="section-title">
+				<h2>Rezervace stolu</h2>
+				<p>Rezervujte si stůl pro nezapomenutelný kulinářský zážitek</p>
+			</div>
+			<div class="form-container">
+				<form id="reservation-form">
+					<div class="form-group">
+						<label for="name">Jméno a příjmení</label>
+						<input type="text" id="name" name="name" required>
+					</div>
+					<div class="form-row">
+						<div class="form-group">
+							<label for="date">Datum</label>
+							<input type="date" id="date" name="date" required>
+						</div>
+						<div class="form-group">
+							<label for="time">Čas</label>
+							<select id="time" name="time" required>
+								<option value="">Vyberte čas</option>
+								<option value="17:00">17:00</option>
+								<option value="17:30">17:30</option>
+								<option value="18:00">18:00</option>
+								<option value="18:30">18:30</option>
+								<option value="19:00">19:00</option>
+								<option value="19:30">19:30</option>
+								<option value="20:00">20:00</option>
+								<option value="20:30">20:30</option>
+								<option value="21:00">21:00</option>
+							</select>
+						</div>
+					</div>
+					<div class="form-row">
+						<div class="form-group">
+							<label for="guests">Počet osob</label>
+							<select id="guests" name="guests" required>
+								<option value="">Vyberte počet</option>
+								<option value="1">1 osoba</option>
+								<option value="2">2 osoby</option>
+								<option value="3">3 osoby</option>
+								<option value="4">4 osoby</option>
+								<option value="5">5 osob</option>
+								<option value="6">6 osob</option>
+								<option value="7+">7+ osob</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="phone">Telefon</label>
+							<input type="tel" id="phone" name="phone" required>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="email">E-mail</label>
+						<input type="email" id="email" name="email" required>
+					</div>
+					<div class="form-group">
+						<label for="special-requests">Poznámka (nepovinné)</label>
+						<textarea id="special-requests" name="special-requests" rows="3"></textarea>
+					</div>
+					<button type="submit" class="btn" style="width: 100%;">Potvrdit rezervaci</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<!-- O nás -->
+	<section class="about" id="about">
+		<div class="container">
+			<div class="about-content">
+				<div class="about-img">
+					<img src="photos/about.png"
+						alt="Interiér restaurace">
+				</div>
+				<div class="about-text">
+					<h2>Náš příběh</h2>
+					<p>Restaurace Harmony vznikla z příběhu Hanky a Davida, vietnamského páru narozeného a vyrostlého v Praze. Dětství trávili
+					mezi dvěma světy: na stole se střídalo pho s rohlíky, závitky s gulášem, vietnamská babička vařila vedle české babičky,
+					a každá zanechala svou stopu.</p>
+					<p>V dospělosti společně cestovali po Asii i Evropě, vařili, ochutnávali a snili o místě, kde se jejich dvě identity –
+					vietnamské kořeny a české srdce – spojí v harmonii chutí.</p>
+					<p>Harmony je výsledkem této cesty. Nabízíme moderní fusion kuchyni inspirovanou Asií i Evropou. Pokrmy, které ctí tradice,
+					ale nebojí se nových kombinací. Jídlo je pro nás mostem – mezi lidmi, kulturami i vzpomínkami.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Galerie -->
+	<section class="gallery" id="gallery">
+		<div class="container">
+			<div class="section-title">
+				<h2>Galerie</h2>
+				<p>Nahlédněte do světa našich kulinářských kreací</p>
+			</div>
+			<div class="gallery-grid">
+				<div class="gallery-item">
+					<img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+						alt="Sushi set">
+					<div class="gallery-overlay">
+						<p>Luxusní sushi set pro dva</p>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<img src="https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+						alt="Sushi roll">
+					<div class="gallery-overlay">
+						<p>Signature Dragon Roll</p>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<img src="https://images.unsplash.com/photo-1617196034183-421b4917c92d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+						alt="Jehněčí kotlety">
+					<div class="gallery-overlay">
+						<p>Jehněčí kotlety s citronovou trávou</p>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+						alt="Interiér restaurace">
+					<div class="gallery-overlay">
+						<p>Elegantní interiér naší restaurace</p>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<img src="https://images.unsplash.com/photo-1553621042-f6e147245754?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+						alt="Miso polévka">
+					<div class="gallery-overlay">
+						<p>Tradiční miso polévka s tofu</p>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+						alt="Sashimi">
+					<div class="gallery-overlay">
+						<p>Čerstvé sashimi</p>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<img src="https://images.unsplash.com/photo-1617196034183-421b4917c92d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+						alt="Dezert">
+					<div class="gallery-overlay">
+						<p>Matcha tiramisu s yuzu</p>
+					</div>
+				</div>
+				<div class="gallery-item">
+					<img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+						alt="Bar">
+					<div class="gallery-overlay">
+						<p>Náš koktejlový bar</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Kontaktní Sekce -->
+	<section class="contact" id="contact">
+		<div class="container">
+			<div class="section-title">
+				<h2>Kontakt a poloha</h2>
+				<p>Najděte nás a kontaktujte</p>
+			</div>
+			<div class="contact-container">
+				<div class="contact-info">
+					<div class="contact-details">
+						<h3>Kontaktní informace</h3>
+						<div class="contact-item">
+							<div class="contact-icon">📍</div>
+							<div>Dlouhá 123, Praha 1, 110 00</div>
+						</div>
+						<div class="contact-item">
+							<div class="contact-icon">📞</div>
+							<div>+420 123 456 789</div>
+						</div>
+						<div class="contact-item">
+							<div class="contact-icon">✉️</div>
+							<div>info@harmonyrestaurace.cz</div>
+						</div>
+					</div>
+
+					<div class="hours">
+						<h3>Otevírací doba</h3>
+						<ul class="hours-list">
+							<li>
+								<span>Pondělí - Čtvrtek</span>
+								<span>11:30 - 22:00</span>
+							</li>
+							<li>
+								<span>Pátek - Sobota</span>
+								<span>11:30 - 23:00</span>
+							</li>
+							<li>
+								<span>Neděle</span>
+								<span>12:00 - 21:00</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="map-container">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.0221254551216!2d14.4194056!3d50.0874654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94e8cf28b7c3%3A0x2600af105c408d30!2sDlouh%C3%A1%2C%20Star%C3%A9%20M%C4%9Bsto%2C%20110%2000%20Praha-Praha%201!5e0!3m2!1scs!2scz!4v1652345678901!5m2!1scs!2scz"
+						allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Patička -->
+	<footer>
+		<div class="container">
+			<div class="footer-logo">Harmony</div>
+			<div class="social-links">
+				<a href="#" aria-label="Facebook">f</a>
+				<a href="#" aria-label="Instagram">i</a>
+				<a href="#" aria-label="Twitter">t</a>
+				<a href="#" aria-label="TripAdvisor">T</a>
+			</div>
+			<div class="copyright">
+				&copy; 2024 Harmony Sushi & Fusion Restaurace. Všechna práva vyhrazena.
+			</div>
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
