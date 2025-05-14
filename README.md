@@ -43,14 +43,12 @@ Open `index.html` in your browser.
 
 ## 🌍 Screenshots
 
-![Homepage](screenshots/home.png)
-![Menu](screenshots/menu.png)
-![Reservation](screenshots/reservation.png)
+<img width="1508" alt="Screenshot 2025-05-14 at 12 14 30" src="https://github.com/user-attachments/assets/600f7b5f-670b-4276-88f5-5ffa97b8224d" />
+<img width="1508" alt="Screenshot 2025-05-14 at 12 14 16" src="https://github.com/user-attachments/assets/0394a370-7eca-4229-bb11-c1d397326c29" />
+<img width="1508" alt="Screenshot 2025-05-14 at 12 13 53" src="https://github.com/user-attachments/assets/e8ab7964-ceff-48f3-86ea-d6c389a329f0" />
+<img width="1508" alt="Screenshot 2025-05-14 at 12 14 45" src="https://github.com/user-attachments/assets/0caf5cd2-71bf-44fd-8bb7-e04420141120" />
+<img width="1508" alt="Screenshot 2025-05-14 at 12 15 17" src="https://github.com/user-attachments/assets/da5ca7f8-62be-4462-98d3-096b00f245c2" />
+<img width="1508" alt="Screenshot 2025-05-14 at 12 15 35" src="https://github.com/user-attachments/assets/97cf63fd-fbd2-4f8c-9aca-46e7bae42783" />
 
-## ❤️ Credits
-- Inspired by traditional Vietnamese and Czech fusion
-- Images sourced from Unsplash and custom uploads
 
----
 
-Built with passion by Eric Pham.
