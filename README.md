@@ -5,6 +5,8 @@ Welcome to **Harmony**, a modern Asian fusion restaurant website that brings tog
 
 ## ✨ Live Demo
 
+👉 Try it here:
+https://ericphamm.github.io/harmony-restaurant/
 
 ## 🌟 Features
 
@@ -38,18 +40,6 @@ cd harmony-restaurant
 3. **Run locally:**
 Open `index.html` in your browser.
 
-## 🚚 Deployment
-
-To deploy on GitHub Pages:
-
-1. Push your project to a GitHub repository
-2. Go to **Settings > Pages**
-3. Under "Source", select the root (`/`) folder
-4. Click **Save**
-5. Your site will be available at:
-```
-https://your-username.github.io/harmony-restaurant/
-```
 
 ## 🌍 Screenshots
 
